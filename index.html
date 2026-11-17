@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameh Ouechtati | Ingénieur en Informatique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Sameh<span>.Dev</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">Profil</a>
+                <a href="#experience">Expérience</a>
+                <a href="#projects">Projets</a>
+                <a href="#skills">Compétences</a>
+                <a href="#education">Formation</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" aria-label="Changer le thème"><i class="fas fa-sun"></i></button>
+                <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Disponible pour de nouvelles opportunités</span>
+                <h1>Sameh Ouechtati</h1>
+                <h2>Ingénieur en Informatique — <span id="typing-text"></span></h2>
+                <p>
+                    Ingénieur en informatique doté d'une double compétence en développement Full-Stack, 
+                    administration systèmes & réseaux et DevOps (8 ans d'expérience en milieu industriel). 
+                    Je conçois, déploie et sécurise des applications et infrastructures performantes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/samah-ouechtati-a68393199" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sameh20950@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+21658302814" title="Téléphone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <!-- Remplace profile.jpg par ta photo extraite du CV -->
+                    <img src="portfeli.png" alt="Sameh Ouechtati" onerror="this.src='https://via.placeholder.com/300x300?text=Sameh+Ouechtati'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expérience Professionnelle -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Expérience Professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">11/2015 – Présent</div>
+                    <div class="timeline-content card">
+                        <h3>Technicien en réparation et maintenance électronique</h3>
+                        <h4><i class="fas fa-building"></i> Sagemcom — Z.I.B.G, Tunis</h4>
+                        <ul>
+                            <li><strong>Diagnostic et dépannage :</strong> Identification et analyse des causes de pannes sur les cartes électroniques défectueuses.</li>
+                            <li><strong>Réparation sous normes IPC :</strong> Assurance de la reprise et du dépannage dans le strict respect des normes IPC.</li>
+                            <li><strong>Traçabilité et données :</strong> Enregistrement et suivi rigoureux de l'ensemble des défauts dans la base de données.</li>
+                            <li><strong>Amélioration continue :</strong> Alerte préventive et corrective sur les dysfonctionnements.</li>
+                            <li><strong>Management :</strong> Gestion et animation d'une équipe de techniciens.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets & Réalisations -->
+    <section class="section bg-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projets & Réalisations</h2>
+            <div class="projects-grid">
+                
+                <!-- Projet 1 -->
+                <div class="project-card card reveal">
+                    <div class="project-header">
+                        <span class="project-date">02/2026 – 07/2026</span>
+                        <span class="project-tag">PFE Cycle Ingénieur • Sagemcom</span>
+                    </div>
+                    <h3>Plateforme GITI-KPI : Pilotage de Maintenance & Gestion de Stock</h3>
+                    <p>Conception, développement et déploiement d'une plateforme SaaS complète de gestion des interventions techniques et d'optimisation des stocks.</p>
+                    <ul class="project-features">
+                        <li><strong>IA Générative & RAG :</strong> Déploiement d'un LLM local (Ollama / Llama 3.1) couplé à une architecture RAG pour l'assistant virtuel <em>« Sagemien IA »</em>.</li>
+                        <li><strong>Automatisation & Inventaire :</strong> Ingestion automatisée de flux CSV et traçabilité temps réel par QR Codes.</li>
+                        <li><strong>Ticketing & Monitoring SLA :</strong> Workflow d'incidents automatisé avec calcul de KPI et alertes SLA.</li>
+                        <li><strong>Sécurité & DevOps :</strong> Sécurisation API (JWT, RBAC), logs d'audit et conteneurisation Docker.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Spring Boot</span>
+                        <span>Angular</span>
+                        <span>Python (FastAPI)</span>
+                        <span>Docker</span>
+                        <span>PostgreSQL</span>
+                        <span>Ollama / RAG</span>
+                        <span>Chart.js</span>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card card reveal">
+                    <div class="project-header">
+                        <span class="project-date">02/2015 – 06/2015</span>
+                        <span class="project-tag">PFE Licence • ISET Béja</span>
+                    </div>
+                    <h3>Application Web de Gestion E-Pharmacie</h3>
+                    <p>Conception et développement d'une solution web complète de gestion officinale (suivi des stocks, gestion des commandes et facturation automatisée).</p>
+                    <ul class="project-features">
+                        <li><strong>Modélisation :</strong> Conception fonctionnelle complète sous UML.</li>
+                        <li><strong>Base de données :</strong> Administration de la base relationnelle sous Oracle SQL.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                        <span>Oracle SQL</span>
+                        <span>UML</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Techniques -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-card card reveal">
+                    <h3><i class="fas fa-code"></i> Développement</h3>
+                    <div class="tags">
+                        <span>Java (Spring Boot, Hibernate)</span>
+                        <span>TypeScript (Angular)</span>
+                        <span>Python (FastAPI)</span>
+                        <span>SQL</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <div class="skill-card card reveal">
+                    <h3><i class="fas fa-brain"></i> IA & Data</h3>
+                    <div class="tags">
+                        <span>LLM (Ollama, Llama 3.1)</span>
+                        <span>Architecture RAG</span>
+                        <span>Inférence locale</span>
+                        <span>Data Visualization</span>
+                    </div>
+                </div>
+
+                <div class="skill-card card reveal">
+                    <h3><i class="fas fa-server"></i> DevOps</h3>
+                    <div class="tags">
+                        <span>Docker</span>
+                        <span>Docker Compose</span>
+                        <span>Git / GitHub / GitLab</span>
+                        <span>Maven</span>
+                        <span>CI/CD Pipelines</span>
+                    </div>
+                </div>
+
+                <div class="skill-card card reveal">
+                    <h3><i class="fas fa-database"></i> Bases de Données</h3>
+                    <div class="tags">
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>Oracle SQL</span>
+                        <span>SQL Server</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-card card reveal">
+                    <h3><i class="fas fa-network-wired"></i> Systèmes & Réseaux</h3>
+                    <div class="tags">
+                        <span>Linux (Ubuntu, CentOS)</span>
+                        <span>Windows Server</span>
+                        <span>Virtualisation (VMware)</span>
+                    </div>
+                </div>
+
+                <div class="skill-card card reveal">
+                    <h3><i class="fas fa-shield-alt"></i> Sécurité</h3>
+                    <div class="tags">
+                        <span>JWT</span>
+                        <span>RBAC</span>
+                        <span>Audit Logging</span>
+                        <span>Sécurité Réseau</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Éducation & Langues -->
+    <section class="section bg-alt" id="education">
+        <div class="container edu-lang-grid">
+            <div>
+                <h2 class="section-title left">Éducation & Formation</h2>
+                <div class="edu-list">
+                    <div class="edu-item card reveal">
+                        <span class="edu-year">11/2026</span>
+                        <h3>Diplôme d'Ingénieur en Informatique</h3>
+                        <p>ESPRIT, Charguia</p>
+                    </div>
+                    <div class="edu-item card reveal">
+                        <span class="edu-year">09/2011 – 06/2015</span>
+                        <h3>Licence en Réseaux Informatiques</h3>
+                        <p>ISET Béja, Béja</p>
+                    </div>
+                    <div class="edu-item card reveal">
+                        <span class="edu-year">09/2010 – 06/2011</span>
+                        <h3>Baccalauréat Sciences Informatiques</h3>
+                        <p>Lycée Bousalem, Bousalem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="section-title left">Langues & Intérêts</h2>
+                <div class="card reveal">
+                    <h3><i class="fas fa-language"></i> Langues</h3>
+                    <ul class="lang-list">
+                        <li><strong>Arabe :</strong> Maternel</li>
+                        <li><strong>Français :</strong> Courant</li>
+                        <li><strong>Anglais :</strong> Technique</li>
+                    </ul>
+                    <hr class="divider">
+                    <h3><i class="fas fa-lightbulb"></i> Centres d'intérêt</h3>
+                    <div class="tags">
+                        <span>Veille technologique</span>
+                        <span>Développement Web</span>
+                        <span>Innovation IA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-grid">
+                <div class="contact-info card">
+                    <h3>Informations</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Cité Rachida, El Mourouj 3, Ben Arous 2074, Tunisie</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+21658302814">+216 58 302 814</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:sameh20950@gmail.com">sameh20950@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sameh-ouechtati-a68393199" target="_blank">samah-ouechtati-a68393199</a></p>
+                </div>
+
+                <form class="contact-form card" id="contactForm">
+                    <h3>Envoyer un message</h3>
+                    <input type="text" id="name" placeholder="Votre nom" required>
+                    <input type="email" id="email" placeholder="Votre email" required>
+                    <textarea id="message" rows="4" placeholder="Votre message..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer via Email</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Sameh Ouechtati. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
