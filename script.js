@@ -43,11 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.getElementById("themeToggle");
     const htmlElement = document.documentElement;
     const themeIcon = themeToggle.querySelector("i");
+    const savedTheme = localStorage.getItem("portfolio-theme");
+    if (savedTheme) {
+        htmlElement.setAttribute("data-theme", savedTheme);
+        themeIcon.className = savedTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
+    }
 
     themeToggle.addEventListener("click", () => {
         const currentTheme = htmlElement.getAttribute("data-theme");
         const newTheme = currentTheme === "dark" ? "light" : "dark";
         htmlElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("portfolio-theme", newTheme);
         themeIcon.className = newTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
     });
 
